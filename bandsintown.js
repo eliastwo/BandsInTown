@@ -37,15 +37,15 @@ var newBands = '';
 inquirer.prompt([{
   name: 'name',
   type: 'input',
-  message: 'What\'s your name?',
+  message: 'What is the name of the band?',
 }, {
   name: 'begDate',
   type: 'input',
-  message: 'Which is the beginning date of your search?',
+  message: 'Which is the beginning date of the tour you are searching?',
 }, {
   name: 'endDate',
   type: 'input',
-  message: 'Which is the end date of your search?',
+  message: 'Which is the end date of the tour you are searching?',
 }
 ]).then((answers) => {
 	newBands = new BandsInTown(answers.name, answers.begDate, answers.endDate);
